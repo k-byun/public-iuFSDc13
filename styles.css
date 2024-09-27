@@ -77,8 +77,12 @@ p {
 
 
 table {
+  width: 100%;
   border-collapse: collapse;
   text-align: right;
   border: 2px solid red;
 }
 
+input, textarea{
+  width: 100%;
+}
