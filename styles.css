@@ -47,3 +47,30 @@ content {
 p {
   padding-left: 10px;
 }
+
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text (the blurb) */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: fixed;
+  /* Make tooltip appear near the mouse pointer */
+  z-index: 1;
+  pointer-events: none;
+  /* Ensure tooltip doesn't block pointer */
+}
+
+/* Show the tooltip on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
