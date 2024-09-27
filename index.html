@@ -13,11 +13,12 @@
 <body>
 
   <div class="container">
-      <span class="tooltip" id="hover-text"><h1>Kevin Byun</h1>
-        <span class="tooltiptext" id="tooltip">
-          Hi there!
-        </span>
+    <span class="tooltip" id="hover-text">
+      <h1>Kevin Byun</h1>
+      <span class="tooltiptext" id="tooltip">
+        Hi there!
       </span>
+    </span>
     <content>
       <h2>About Me</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur doloremque consequatur libero quo,
@@ -27,6 +28,33 @@
     <a href="https://example.com" class="link-button"><i class="fa-solid fa-masks-theater"></i> Portfolios showoffs</a>
     <a href="https://example.com" class="link-button"><i class="fa-solid fa-masks-theater"></i> Blog</a>
     <a href="https://example.com" class="link-button"><i class="fa-solid fa-envelope"></i> Contact me directly!</a>
+
+    <h2>Quick Feedback/Comments:</h2>
+    <table>
+      <form action="/submit" action="POST">
+        <tr>
+          <td><label for="name">Name: </label></td>
+          <td><input type="text" id="name" name="name"><br></td>
+        </tr>
+
+        <tr>
+          <td><label for="email" id="email" name="email">Email: </label></td>
+          <td><input type="email" id="email" name="email" required><br></td>
+        </tr>
+
+        <tr>
+          <td><label for="message">Message: <br>(max:200)</label></td>
+          <td><textarea name="message" id="message" maxlength="200"></textarea><br></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button type="submit">Submit!</button>
+          </td>
+        </tr>
+
+      </form>
+    </table>
   </div>
 
   <script src="mousetootip.js"></script>

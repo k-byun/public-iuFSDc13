@@ -74,3 +74,11 @@ p {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+
+table {
+  border-collapse: collapse;
+  text-align: right;
+  border: 2px solid red;
+}
+
