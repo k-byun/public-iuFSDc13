@@ -10,7 +10,8 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  /* max-width: 400px; */
+  max-width: 85%; 
   margin: 0 auto;
   padding: 20px;
 }
@@ -82,6 +83,7 @@ p {
 
 
 table {
+  /* width: 95%; */
   width: 100%;
   border-collapse: collapse;
   text-align: right;
@@ -92,6 +94,11 @@ input, textarea{
   width: 100%;
   border-width: 0px;
 }
+
+/* tr {
+  max-width: 95%;
+}
+ */
 
 @media screen and (max-width: 30em) {
 /* @media screen and (max-width: 400px) { */
